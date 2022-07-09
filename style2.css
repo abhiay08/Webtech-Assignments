@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: auto;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #24252a;
+    display: grid;
+    place-items: center;
+
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}

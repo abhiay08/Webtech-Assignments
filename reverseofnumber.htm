@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reverse Of Number</title>
+
+    <style>
+        h1{
+            text-align: center;
+            margin: 10px;
+            font-family: cursive;
+            font-size: 30px;
+            color: blueviolet;
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+            margin: auto;
+            font-family: sans-serif;
+            font-size: 25px;
+            color: rgb(207, 47, 47);
+            padding: 10px;
+        }
+        input{
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            color: magenta;
+        }
+       
+    </style>
+    <script type="text/javascript">
+        function Reverse_num()
+        {
+            var x= document.getElementById("1").value;
+            x = Number (x);
+            var rem , reverse=0;
+            while (x>0) {
+                rem=x % 10;
+                reverse=reverse *10 +rem;
+                x=parseInt(x/10);
+            }
+            document.write("Reverse number is "+ reverse)
+        }
+
+    </script>
+   </head>
+   <body>
+    <h1> REVERSE NUMBER </h1>
+    <center>
+        <h2> ENTER YOUR NUMBER : </h2><input type="text" name="" id="1">
+    <input type="button" value="Reverse" onclick="Reverse_num()"> 
+
+
+</body>
+</html>

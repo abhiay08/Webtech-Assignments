@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Number or Not</title>
+</head>
+<body>
+    <script>
+        var input=prompt("Enter a value");
+        var v=input;
+        var count=0;
+        for(var i=1; i<input; i++)
+        {
+        if(input%i==0)
+        {
+            count=count+i;
+        }
+        }
+        if(count==v)
+        {
+     alert   ("Given no is perfect"); // showing Alert message on desktop that Number is perfect
+        }
+        else
+        {
+      alert  ("Given no is not a perfect"); // showing Alert message on desktop that Numberis not perfect
+        }
+        </script>
+</body>
+</html>

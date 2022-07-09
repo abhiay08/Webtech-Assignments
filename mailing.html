@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <title>Assn8|Que-3</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      h1,
+      h2 {
+        font-family: "Time";
+        font-weight: 600;
+      }
+      .container {
+        border: dotted 1px black;
+        text-align: start;
+        
+        width: 700px;
+        padding: 20px 30px;
+      }
+      h5 {
+        text-align: right;
+        margin: 10px 20px;
+      }
+      .wrapper {
+        width: 80%;
+      }
+      span {
+        color: red;
+      }
+      .input-container {
+        margin: 10px 0;
+      }
+      .input-container input {
+        width: 70%;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      .input-container ::placeholder {
+        color: orange;
+        text-align: right;
+      }
+
+      .input-container h2 {
+        margin: 5px;
+ 
+      }
+
+      button {
+        padding: 15px 40px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>Subscribe to our mailing list</h1>
+        <h5><span>*</span> indicates required</h5>
+      </div>
+      <form action="./responce.html">
+        <div class="input-container">
+          <h2>Email Address</h2>
+          <input type="email" placeholder="*" required />
+        </div>
+        <div class="input-container">
+          <h2>First Name</h2>
+          <input type="name" />
+        </div>
+        <div class="input-container">
+          <h2>Last Name</h2>
+          <input type="name" />
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </body>
+</html>

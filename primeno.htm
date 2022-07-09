@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prime Number or Not </title>
+</head>
+<body>
+    <center>  <h2>  Enter First Number : <input type="number" id="a"><br><br>
+    Enter Second Number : <input type="number" id="b"><br><br>
+   <input type="submit" onclick="prime ()"> </h2> </center>
+    <script type="text/javascript">
+        function prime() // number divisible by itself is called as Prime Number.
+        {
+            var x=Number(document.getElementById("a").value);
+            var y=Number(document.getElementById("b").value);
+            while (x<=y) {
+                var f=0;
+                for (var i=2; i<=parseInt (x/2); i++)
+            {
+                if (x%i==0)
+                 {
+                f=1;
+                break;    
+                }
+            }
+            if (f==0) 
+                document.write(x," ");
+            x=x+1;
+            }
+        }
+     </script>
+</body>
+</html>

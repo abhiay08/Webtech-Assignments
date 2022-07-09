@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Leap-Year</title>
+<style>
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.result {
+   font-size: 18px;
+   font-weight: 500;
+   color: blueviolet;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+    <center>
+<h1>Check Leap Year or Not</h1>
+Enter the Year <input class="year" type="text" /> <br><br>
+<button class="Btn"> CHECK </button>
+<div class="result"></div>
+<h3>Click on the button to check if the year above is leap year or not</h3></center>
+<script>
+let resultEle = document.querySelector(".result");
+let yearEle = document.querySelector(".year");
+document.querySelector(".Btn").addEventListener("click", () => {
+   if (yearEle.value % 4 == 0) {
+      resultEle.innerHTML = yearEle.value + " is a leap year ";
+   } else resultEle.innerHTML = yearEle.value + " is not a leap year";
+});
+</script>
+</body>
+</html>

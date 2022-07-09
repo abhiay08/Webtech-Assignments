@@ -1,0 +1,142 @@
+/* Created By: ABHI AY */
+body{
+margin: 0;
+padding: 0;
+background: #fff;
+}
+.logo{
+width: 100px;
+}
+#eye{
+	width: 28px;
+	position: relative;
+	top: -5px;
+	display: block;
+	cursor: pointer;
+}
+#iconeye{
+	display: inline-block;
+	}
+.main{
+	width: 100%;
+}
+form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 1px solid #d5d2d2;
+	border-radius: 10px;
+	width: 750px;
+	padding: 25px;
+}
+h3{
+	position: relative;
+	margin: -20px 0 0 13px;
+	font-size: 23px; 
+	font-family: jost;
+	letter-spacing: 1px;
+}
+input{
+	border: 1px solid #d5d2d2;
+	border-radius: 5px;
+	height: 35px;
+	padding: 0 10px;
+	font-size: 15px;
+	outline: none;
+}
+input:focus{
+	border: 1.5px solid #1f52f9;
+}
+.name{
+	display: inline-block;
+}
+input[type="name"]{
+	display: b1ock;
+	margin: 30px 0 0 10px;
+}
+input[type="user-name"]{
+	display: block;
+	margin: 10px 0 0 10px;
+	width: 390px;
+}
+.gmail{
+	position: relative;
+	display: block;
+	top: -40px;
+	left: 330px;
+	font-family: roboto;
+	color: rgb(77, 64, 64);
+	font-size: 15px;
+	cursor: default;
+}
+.pass{
+	display: inline-block;
+}
+.password{
+	display: block;
+	width: -140px;
+	margin: 0 5px 0 10px;
+}
+a{
+	display: block:
+	position: relative;
+	font-family: roboto;
+	text-decoration: none;
+}
+.line1{
+	font-size: 18px;
+	    color: #5F9EA0; 
+     top: 47px;		
+	font-family: osward;
+	margin: -30px 0 0 15px;
+	text-decoration: none;
+}
+.line2{
+	color: #1144ed;
+	font-size: 21px;
+	margin: 20px 0 20px 15px;
+	
+}
+.line3{
+	font-size: 18px;
+	margin: -10px 0 0 15px;
+	width: 300px;
+}
+.line4{
+	font-size: 15px;
+	margin: 20px 8px;
+	color: #4971f6;
+	display: inline-block;
+	font-family: arial rounded mt;
+}
+input[type="submit"]{
+	background: #4971f6;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 15px;
+	margin: 40px 0 30px 180px;
+}
+input[type="submit"] :hover{
+	background: #254fdb;
+}
+label{
+	position: relative;
+	top: -30px;
+	left: 20px;
+	font-family: pt sans;
+	font-size: 18px;
+	color: #555;
+	pointer-events: none;
+	transition: .2s all;
+}
+input :focus ~ label,
+input :valid ~ label{
+	top: -49px;
+	left: 15px;
+	background: #fff;
+	padding: 0 5px;
+	font-size: 10px;
+	color: #1f52f9
+}

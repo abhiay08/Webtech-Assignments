@@ -1,0 +1,27 @@
+<!----CREATED BY ABHI AY-->
+<html>  
+   <body>  
+    <script>  
+    var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    if (minute < 10) {  
+      minute = "0" + minute;  
+    }  
+    if (second < 10) {  
+      second = "0" + second;  
+    }  
+    if (hour < 12) {  
+      welcome = "GOOD MORNING";  
+    } else if (hour < 17) {  
+      welcome = "GOOD AFTERNOON";  
+    } else {  
+      welcome = "GOOD EVENING";  
+    }  
+    document.write("<h2>" + "<font color='seablue' size='5px'>" + welcome + "</font>"+ " &  WELCOME YOU ALL "   );  
+    document.write("<br>" + hour + ":" + minute + ":" + second); 
+    </script>  
+  </body>  
+</html>

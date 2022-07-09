@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Name & Mobile number</title>
+<script>
+function validate()
+{
+
+sname=document.getElementById("nm").value;
+smobile=document.getElementById("mb").value;
+if(sname==""||smobile=="")
+{
+alert("Fields should not be empty");
+return false;
+}
+else if(!sname.match(/^[A-Za-z]+$/))
+{
+alert("Name should contain only characters")
+return false;
+}
+else if(!smobile.match(/^\d{10}$/))
+{
+alert("Mobile number Not valid")
+return false;
+}
+
+}
+</script>
+<body>
+<form name="form" action="form.html">
+<table align="center" width=500 height=150>
+<tr><th colspan=2>Name & Mobile number</th></tr>
+<tr><td>User Name <br> </td><td><input type=text name=txtSname id=nm size=30></td><br>
+<tr><td>Mobile No<br></td><td><input type=text name=txtSmobile id=mb size=30></td><br>
+<tr><td><input type=submit value="Submit" onClick="return validate()"></td>
+      <td> <input type=reset value="Reset"></td></tr>
+</table>
+</form>
+</body>
+</html>

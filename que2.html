@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Assignment-8 | Q-2</title>
+      <style>
+        body {
+          background-color: greenyellow;
+          color: brown;
+          font-size: 30px;
+        }
+  
+        .container {
+          margin: auto;
+          text-align: center;
+        }
+  
+        label,
+        input {
+          display: block;
+          margin: 20px auto;
+        }
+  
+        input {
+          padding: 10px;
+          width: 400px;
+          font-size: 17px;
+        
+        }
+        
+        input::placeholder {
+          font-family: cursive;
+          text-align: center;
+        }
+      </style>
+    </head>
+  
+    <body>
+      <div class="container">
+        <form action="form.html">
+          <label for="email">Enter name below</label>
+  
+          <input
+            required  
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name Here...."
+          />
+            <label for="mobile">Enter mobile no below</label>
+            <input required type="number"   placeholder="mobile No"  pattern=" (/^\d{10}$/.test(val))">
+          <input type="submit">
+        </form>
+      </div>
+  
+   
+    </body>
+  </html>

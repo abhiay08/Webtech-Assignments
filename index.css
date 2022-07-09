@@ -1,0 +1,38 @@
+/* Created By Abhi AY */
+#clockContainer{  
+    position: relative;
+    margin: auto;
+    height: 20vw;
+    width: 20vw; 
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;
+    height: 15%;
+    top: 40%;
+    left: 48%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.7%;
+    height: 19.55%;
+    top: 35%;
+    left: 47%;
+    opacity: 0.9;  
+}
+#second{
+    width: 1%;
+    height: 24.95%;
+    top: 29%;
+    left: 50.10%;
+    opacity: 0.8; 
+    
+}
