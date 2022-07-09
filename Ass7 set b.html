@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <title>Assignment-7|Set-B|Que-1</title>
+    <style>
+        body{
+            background-color : pink;
+           font-family: cursive;
+           font-style: italic;
+           font-size: 20px;
+        }
+         .container {
+            display: flex;
+            align-items: center;
+            justify-content: auto;
+            flex-direction: column;
+            
+        }
+
+        .input-wrapper {
+            width: 300px;
+            height: 50px;
+        }
+
+        .input-wrapper>* {
+            width: 100%;
+            height: 100%;
+            font-size: 25px;
+            text-align: center;
+        }
+
+           button {
+            padding: 25px;
+            margin: 20px;
+            width: 190px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-wrapper">
+            <h1>I. Square Root</h1>
+            <h1>II. Power</h1>
+            <h1>III. Absolute Value</h1>
+        </div>
+        <h1 class="hint">Enter Choice Number Below</h1>
+
+        <div class="input-wrapper">
+            <input id="input" type="number" min="1" max="3"  />
+        </div>
+        <div class="btn-container">
+            <button onclick="solution()">Submit</button>
+        </div>
+    </div>
+    <script>
+        function solution() {
+            let choice = document.querySelector("#input").value;
+            let hint = document.querySelector(".hint");
+            
+                if (choice == 1) {
+                    let num = prompt("Enter number to find Square Root") ;
+                    let newNum = Math.sqrt(Number(num));
+                    hint.textContent =  `Square root of ${num} is ${Math.round(newNum)}`;
+                }
+
+                else if(choice == 2){                   
+                      let x = prompt("Enter value of Base"); 
+                    let y = prompt("Enter Value of Exponent");
+                    let newNum = Math.pow(x ,y);
+                    hint.textContent =  `Power of ${x} and ${y} is ${Math.round(newNum)}`;
+                }
+
+                else if(choice == 3){
+                    let x = prompt("Enter value of X");
+                    let y = prompt("Enter Value of Y");
+                    let newNum = Math.abs(Number(x, y));
+                    hint.textContent =  `Absolute Value of ${x} and ${y} is ${Math.round(newNum)}`;
+                }
+            else{
+                hint.textContent = "Enter Valid Options from above";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
+<!-- let inp = document.querySelector("#input"); -->
